@@ -1,0 +1,27 @@
+server:
+  port: 8090
+  contextPath: /ooba
+  
+spring:
+  application:
+    name: ooba
+  mvc:
+    view:
+      prefix: /WEB-INF/jsp/
+      suffix: .jsp
+      
+feign:
+  hystrix:
+    enabled: true
+
+ooba:
+  provider: GAUTH
+  otp:
+    delivery:
+      preference: BOTH
+    redelivery_required: 10
+    expiry_minutes: 5
+    length: 6
+  host:
+    name: SWAPSTECH
+    url: http://swapstech.com
