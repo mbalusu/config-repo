@@ -13,7 +13,7 @@ feign:
     enabled: true
 
 ooba:
-  provider: GAUTH
+  provider: STAR
   otp:
     delivery:
       preference: BOTH
