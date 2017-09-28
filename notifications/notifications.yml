@@ -1,0 +1,5 @@
+server:
+  port: 9090
+  contextPath: /notifications
+logging:
+  file: c://mbalusu/myapplication.log
