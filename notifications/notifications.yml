@@ -1,5 +1,19 @@
+auth-server: http://localhost:8081/uaa
 server:
   port: 9091
   contextPath: /notifications
 logging:
   file: c://mbalusu/myapplication.log
+security:
+  basic:
+    enabled: false
+  oauth2:
+    client:
+      clientId: my-trusted-client
+      clientSecret: secret
+      accessTokenUri: ${auth-server}/oauth/token
+      userAuthorizationUri: ${auth-server}/oauth/authorize
+      scope: read, write
+    resource:
+      jwt:
+        keyUri: ${auth-server}/oauth/token_key
