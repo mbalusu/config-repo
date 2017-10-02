@@ -9,7 +9,7 @@ feign:
     enabled: true
   hystrix:
     enabled: false
-    
+hystrix.command.default.execution.isolation.strategy: SEMAPHORE
 security:
   basic:
     enabled: false
