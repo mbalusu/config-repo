@@ -4,6 +4,7 @@ server:
   contextPath: /notifications
 logging:
   file: c://mbalusu/myapplication.log
+feign.hystrix.enabled: false
 security:
   basic:
     enabled: false
