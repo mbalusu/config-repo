@@ -17,3 +17,9 @@ security:
     resource:
       jwt:
         keyUri: ${auth-server}/oauth/token_key
+resourceServerClient:
+  clientId: my-trusted-client
+  clientSecret: secret
+  accessTokenUri: ${auth-server}/oauth/token
+  userAuthorizationUri: ${auth-server}/oauth/authorize
+  scope: read, write
