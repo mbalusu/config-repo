@@ -22,4 +22,4 @@ resourceServerClient:
   clientSecret: secret
   accessTokenUri: ${auth-server}/oauth/token
   userAuthorizationUri: ${auth-server}/oauth/authorize
-  scope: read1, write1
+  scope: read, write
