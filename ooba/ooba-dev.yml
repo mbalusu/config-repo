@@ -17,7 +17,7 @@ feign:
     enabled: true
 
 ooba:
-  provider: STAR
+  provider: GAUTH
   otp:
     delivery:
       preference: BOTH
