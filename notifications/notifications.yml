@@ -3,29 +3,29 @@ server:
   port: 9091
   contextPath: /notifications
 logging:
-  file: c://mbalusu/myapplication.log
+  file: c://mbalusu/notifications.log
 feign:
-  oauth2:
-    enabled: true
+#  oauth2:
+#    enabled: true
   hystrix:
     enabled: false
 hystrix.command.default.execution.isolation.strategy: SEMAPHORE
 security:
   basic:
     enabled: false
-  oauth2:
-    client:
-      clientId: my-trusted-client
-      clientSecret: secret
-      accessTokenUri: ${auth-server}/oauth/token
-      userAuthorizationUri: ${auth-server}/oauth/authorize
-      scope: read, write
-    resource:
-      jwt:
-        keyUri: ${auth-server}/oauth/token_key
-resourceServerClient:
-  clientId: my-trusted-client
-  clientSecret: secret
-  accessTokenUri: ${auth-server}/oauth/token
-  userAuthorizationUri: ${auth-server}/oauth/authorize
-  scope: read, write
+#  oauth2:
+#    client:
+#      clientId: my-trusted-client
+#      clientSecret: secret
+#      accessTokenUri: ${auth-server}/oauth/token
+#      userAuthorizationUri: ${auth-server}/oauth/authorize
+#      scope: read, write
+#    resource:
+#      jwt:
+#        keyUri: ${auth-server}/oauth/token_key
+#resourceServerClient:
+#  clientId: my-trusted-client
+#  clientSecret: secret
+#  accessTokenUri: ${auth-server}/oauth/token
+#  userAuthorizationUri: ${auth-server}/oauth/authorize
+#  scope: read, write
