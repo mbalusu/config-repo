@@ -29,3 +29,12 @@ security:
 #  accessTokenUri: ${auth-server}/oauth/token
 #  userAuthorizationUri: ${auth-server}/oauth/authorize
 #  scope: read, write
+spring:
+    mail:
+       host: smtp.gmail.com
+       port: 587
+       username: mbalusu@gmail.com      
+       password: m@!AUG09
+       properties.mail.smtp:
+                 auth: true
+                 starttls.enable: true
