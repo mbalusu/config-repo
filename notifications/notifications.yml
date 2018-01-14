@@ -29,3 +29,21 @@ security:
 #  accessTokenUri: ${auth-server}/oauth/token
 #  userAuthorizationUri: ${auth-server}/oauth/authorize
 #  scope: read, write
+spring:
+   mail:
+      host: smtp.gmail.com
+	  port: 587
+      password: m@!AUG09
+	  username: mbalusu@gmail.com
+      properties:
+         mail:
+            debug:true
+            transport:
+               protocol: smtp
+               smtp:
+                  auth: true
+                  starttls.enable: true
+                  timeout: 1000
+                  socketFactory.class: javax.net.ssl.SSLSocketFactory
+                  ssl.enable: true
+               
