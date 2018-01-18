@@ -4,7 +4,7 @@ eureka:
     leaseExpirationDurationInSeconds: 2
   client:
     serviceUrl:
-      defaultZone: https://starapi.swapstech.net/registry/eureka/
+      defaultZone: http://Microservices-lb-1314641267.us-east-2.elb.amazonaws.com/registry/eureka/
     healthcheck:
       enabled: true
     lease:
