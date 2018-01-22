@@ -23,3 +23,15 @@ ooba:
   host:
     name: SWAPSTECH
     url: http://swapstech.com
+    
+security:
+    basic:
+        enabled: false
+
+config:
+    oauth2:
+        clientID: service-account-1
+        clientSecret: service-account-1-secret
+        accessTokenUri: http://Microservices-lb-1314641267.us-east-2.elb.amazonaws.com/auth/oauth/token
+        userAuthorizationUri: http://Microservices-lb-1314641267.us-east-2.elb.amazonaws.com/auth/oauth/authorize
+        resourceURI: http://Microservices-lb-1314641267.us-east-2.elb.amazonaws.com/ooba/ui
