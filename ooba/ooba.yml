@@ -25,8 +25,8 @@ ooba:
     url: http://swapstech.com
     
 security:
-    basic:
-        enabled: false
+  basic:
+    enabled: false
   oauth2:
     resource:
       jwt:
