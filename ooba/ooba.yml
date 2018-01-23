@@ -27,7 +27,10 @@ ooba:
 security:
     basic:
         enabled: false
-
+  oauth2:
+    resource:
+      jwt:
+        keyUri: http://Microservices-lb-1314641267.us-east-2.elb.amazonaws.com/auth/oauth/token_key
 config:
     oauth2:
         clientID: service-account-1
