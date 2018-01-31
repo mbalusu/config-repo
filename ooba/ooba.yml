@@ -33,8 +33,8 @@ security:
         keyUri: http://Microservices-lb-1314641267.us-east-2.elb.amazonaws.com/auth/oauth/token_key
 config:
     oauth2:
-        clientID: service-account-1
-        clientSecret: service-account-1-secret
-        accessTokenUri: http://Microservices-lb-1314641267.us-east-2.elb.amazonaws.com/auth/oauth/token
+        client-id: service-account-1
+        client-secret: service-account-1-secret
+        access-token-url: http://Microservices-lb-1314641267.us-east-2.elb.amazonaws.com/auth/oauth/token
         userAuthorizationUri: http://Microservices-lb-1314641267.us-east-2.elb.amazonaws.com/auth/oauth/authorize
         resourceURI: http://Microservices-lb-1314641267.us-east-2.elb.amazonaws.com/ooba/ui
