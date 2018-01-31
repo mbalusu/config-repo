@@ -8,9 +8,9 @@ spring:
       prefix: /WEB-INF/jsp/
       suffix: .jsp
       
-feign:
-  hystrix:
-    enabled: true
+#feign:
+#  hystrix:
+#    enabled: true
     
 hystrix:
   metrics:
