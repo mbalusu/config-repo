@@ -10,7 +10,17 @@ spring:
       
 feign:
   hystrix:
-    enabled: false
+    enabled: true
+    
+hystrix:
+  metrics:
+    enabled: true
+  command:
+    default:
+      execution:
+        isolation:
+          thread:
+            timeoutInMilliseconds: 12000
 
 ooba:
   provider: STAR
