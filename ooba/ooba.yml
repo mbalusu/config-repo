@@ -21,7 +21,9 @@ hystrix:
         isolation:
           thread:
             timeoutInMilliseconds: 12000
-
+logging:
+  level:
+    com.swapstech.star.notifications.client: DEBUG
 ooba:
   provider: STAR
   otp:
