@@ -10,7 +10,7 @@ spring:
       
 feign:
   hystrix:
-    enabled: false
+    enabled: true
     
 hystrix:
   metrics:
@@ -25,7 +25,7 @@ logging:
   level:
     com.swapstech.star.notifications.client: DEBUG
 ooba:
-  provider: STAR
+  provider: GAUTH
   otp:
     delivery:
       preference: BOTH
