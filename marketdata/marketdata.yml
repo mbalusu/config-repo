@@ -2,6 +2,6 @@ server:
   port: 8086
   contextPath: /marketdata
 
-spring:
-  hazelcast:
-    config: classpath:config/hazelcast.xml
+#spring:
+#  hazelcast:
+#    config: classpath:config/hazelcast.xml
