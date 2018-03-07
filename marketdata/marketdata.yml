@@ -2,6 +2,18 @@ server:
   port: 8086
   contextPath: /marketdata
 
-#spring:
-#  hazelcast:
-#    config: classpath:config/hazelcast.xml
+logging:
+  file: c://mbalusu/marketdata.log
+feign:
+#  oauth2:
+#    enabled: true
+  hystrix:
+    enabled: false
+hystrix.command.default.execution.isolation.strategy: SEMAPHORE
+security:
+  basic:
+    enabled: false
+  oauth2:
+    resource:
+      jwt:
+        keyUri: http://Microservices-lb-1314641267.us-east-2.elb.amazonaws.com/auth/oauth/token_key
