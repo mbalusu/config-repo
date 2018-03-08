@@ -1,0 +1,20 @@
+auth-server: http://localhost:8081/uaa
+server:
+  port: 9060
+  contextPath: /calendar
+logging:
+  file: c://swapstech/microservice/myapplication.log
+  
+security:
+  basic:
+    enabled: false
+  oauth2:
+    client:
+      clientId: my-trusted-client
+      clientSecret: secret
+      accessTokenUri: ${auth-server}/oauth/token
+      userAuthorizationUri: ${auth-server}/oauth/authorize
+      scope: read, write
+    resource:
+      jwt:
+        keyUri: ${auth-server}/oauth/token_key
