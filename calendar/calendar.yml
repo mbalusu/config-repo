@@ -1,0 +1,16 @@
+server:
+  port: 8084
+  contextPath: /calendar
+logging:
+  file: c://swapstech/microservice/calendar.log
+feign:
+  hystrix:
+    enabled: false
+hystrix.command.default.execution.isolation.strategy: SEMAPHORE
+security:
+  basic:
+    enabled: false
+  oauth2:
+    resource:
+      jwt:
+        keyUri: http://Microservices-lb-1314641267.us-east-2.elb.amazonaws.com/auth/oauth/token_key        
