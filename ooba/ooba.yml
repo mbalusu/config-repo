@@ -1,5 +1,5 @@
 server:
-  port: 8090
+  port: 8084
   contextPath: /ooba
   
 spring:
@@ -11,7 +11,20 @@ spring:
 feign:
   hystrix:
     enabled: true
-
+    
+hystrix:
+  metrics:
+    enabled: true
+  command:
+    default:
+      execution:
+        isolation:
+          strategy: SEMAPHORE
+          thread:
+            timeoutInMilliseconds: 12000
+logging:
+  level:
+    com.swapstech.star.notifications.client: DEBUG
 ooba:
   provider: GAUTH
   otp:
@@ -23,3 +36,18 @@ ooba:
   host:
     name: SWAPSTECH
     url: http://swapstech.com
+    
+security:
+  basic:
+    enabled: false
+  oauth2:
+    resource:
+      jwt:
+        keyUri: http://Microservices-lb-1314641267.us-east-2.elb.amazonaws.com/auth/oauth/token_key
+config:
+    oauth2:
+        client-id: service-account-1
+        client-secret: service-account-1-secret
+        access-token-url: http://Microservices-lb-1314641267.us-east-2.elb.amazonaws.com/auth/oauth/token
+        userAuthorizationUri: http://Microservices-lb-1314641267.us-east-2.elb.amazonaws.com/auth/oauth/authorize
+        resourceURI: http://Microservices-lb-1314641267.us-east-2.elb.amazonaws.com/ooba/ui
