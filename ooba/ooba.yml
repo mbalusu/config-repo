@@ -26,7 +26,7 @@ logging:
   level:
     com.swapstech.star.notifications.client: DEBUG
 ooba:
-  provider: STAR
+  provider: GAUTH
   otp:
     delivery:
       preference: BOTH
