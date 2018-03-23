@@ -29,7 +29,7 @@ ooba:
   provider: STAR
   otp:
     delivery:
-      preference: EMAIL
+      preference: SMS
     redelivery_required: 10
     expiry_minutes: 5
     length: 6
