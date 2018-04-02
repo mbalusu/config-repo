@@ -1,24 +1,3 @@
 server:
   port: ${PORT:7103}
   contextPath: /auth
-logging:
-  level:
-    org.springframework.security: DEBUG
-keystore:
-  password: mySecretKey
-security:
-  basic:
-    enabled: false
-eureka:
-  instance:
-    leaseRenewalIntervalInSeconds: 1
-    leaseExpirationDurationInSeconds: 2
-  client:
-    serviceUrl:
-      defaultZone: http://localhost:7101/registry/eureka/
-      username: registry
-      password: swaps1234
-    healthcheck:
-      enabled: true
-    lease:
-      duration: 5
