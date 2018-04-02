@@ -15,9 +15,9 @@ eureka:
     leaseExpirationDurationInSeconds: 2
   client:
     serviceUrl:
-      defaultZone: http://localhost:7101/registry/eureka/
-      username: registry
-      password: swaps1234
+      defaultZone: http:registry:swaps1234@//localhost:7101/registry/eureka/
+      #username: registry
+      #password: swaps1234
     healthcheck:
       enabled: true
     lease:
