@@ -1,0 +1,22 @@
+server:
+  port: 8085
+  contextPath: /auth
+logging:
+  level:
+    org.springframework.security: DEBUG
+keystore:
+  password: mySecretKey
+security:
+  basic:
+    enabled: false
+eureka:
+  instance:
+    leaseRenewalIntervalInSeconds: 1
+    leaseExpirationDurationInSeconds: 2
+  client:
+    serviceUrl:
+      defaultZone: http://localhost:7101/registry/eureka/
+    healthcheck:
+      enabled: true
+    lease:
+      duration: 5
