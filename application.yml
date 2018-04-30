@@ -4,8 +4,8 @@ eureka:
     leaseExpirationDurationInSeconds: 2
   client:
     serviceUrl:
-      #defaultZone: http://Microservices-lb-1314641267.us-east-2.elb.amazonaws.com/registry/eureka/
-      defaultZone: http://registry:swaps1234@localhost:7101/registry/eureka/
+      defaultZone: http://Microservices-lb-1314641267.us-east-2.elb.amazonaws.com/registry/eureka/
+      #defaultZone: http://registry:swaps1234@localhost:7101/registry/eureka/
     healthcheck:
       enabled: true
     lease:
